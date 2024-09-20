@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects - Lilly Anestal</title>
+        <link rel="stylesheet" href="design.css">  
+    </head>
+    
+<body>
+    <Header><h1> Projects</h1></Header>
+    
+    <nav>
+        <ul class="navbar">
+            <li><a href="education.html">Education</a></li> <!-- No leading '/' -->
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="work.html">Work Experience</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="leadership.html">Leadership and Involvement</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>
+            <b> Instant Availability of Airbnb Listings: A Decision Tree Approach</b> | Boston, MA,  August  2024 <br>
+            Designed a decision tree model to predict booking availabilities using an Airbnb dataset, analyzing the number of beds, the host acceptance rates, and more features of the dataset. <br>
+        </p>
+        <p>
+            <b> Code Violations</b> | Boston University, Jan 2024 - May 2024 <br>
+            Investigated multiple datasets to produce an interactive data visualization of the code violation disparities between Boston's Black and White neighborhoods in collaboration with a Black-owned editorial partner. <br>
+        </p>
+        <p>
+            <b> VideoScope</b> | Massachusetts Institute of Technology, Oct 2022 <br>
+            Co-developed educational web service at MIT’s hackathon using HTML to give students a new way to engage in lectures remotely.<br>
+        </p>
+    </main>
+
+    <div class="calculator">
+        <h1> Calculator</h1>
+        <label for ="first-number"> First Number: </label>
+        <input type="number" id="first-number" name="first-number"><br><br>
+
+        <label for="second-number"> Second Number: </label>
+        <input type="number" id="second-number" name="second-number"><br><br>
+    <div class="allButton">
+        <button onclick="addition()">+</button>
+        <button onclick="subtraction()">-</button>
+        <button onclick="multiplication()">*</button>
+        <button onclick="division()">/</button>
+        <button onclick="power()">**</button>
+        <button onclick="clearCalc()">clear</button>
+    </div>
+        <h3 id="output"></h3>
+    </div>
+
+    <script src="index.js"></script>
+    <footer>
+        <p>All rights reserved by Lilly Anestal: <a href="">Credits</a>&#169;</p>
+        </footer>
+</body>
+</html>
