@@ -1,61 +1,11 @@
+/* Reset margin and padding for all elements, and set box-sizing to border-box */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@media screen and (max-width:750px){
-    .main-container{
-        display:flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        background-color: #f2738c;
-        width: 100%;
-        height: auto;
-        padding: 100px 0;
-        justify-content: space-around;
-      }
-
-      ul {
-        display: flex;
-        flex-direction: row; /* Horizontal list */
-        justify-content: space-around; /* Evenly distribute items */
-        padding: 0;
-        margin: 0;
-        list-style: none; /* Remove bullets */
-        width: 100%;
-    }
-      
-      li{
-        flex:1;
-      }
-      li a {
-        padding: 10px;
-        font-size: calc(3px + 1vw);
-        text-align: center;
-        display: block;
-        width: 100%; 
-    }
-    main {
-        margin-left:0;
-        height:auto;
-        padding: 20px 10px;
-      }
-
-      header, footer {
-        padding: 20px 10px;
-        text-align: center;
-    }
-    
-}
-
-
+/* Body styling: sets background color, text color, and defines flexbox layout */
 body {
     background-color: #5d091a;
     color: #5d091a;
@@ -63,46 +13,39 @@ body {
     flex-direction: column;
 }
 
-/* Layout structure using Flexbox */
+/* Main container layout: Flexbox with row direction for content */
 .main-container {
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
 }
 
-
-/* Header */
+/* Header styling: adds padding, background color, and centers text */
 header {
     padding: 60px;
     background-color: plum;
     text-align: center;
 }
 
-/* Vertical Navbar */
+/* Navbar styling: background color, padding, and 100% height */
 .navbar {
-    flex:30%;
     background-color: #f2738c;
     padding: 20px;
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    top: 0; /* Align to the top */
-    left: 0;
-    z-index: 1;
-    overflow-x: hidden;
-    padding-top: 70px; /* Account for header height */
-    
+    height: 100%; 
 }
 
+/* Remove bullets and padding/margin from unordered list */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+/* Add padding to list items */
 li {
     padding: 10px 0;
 }
 
+/* Anchor tag styling: text color, padding, font size, and font family */
 li a {
     display: block;
     color: white;
@@ -112,97 +55,98 @@ li a {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
+}
 
-  }
-  
-  /* Change the link color on hover */
+/* Change link color and background on hover */
 li a:hover {
     background-color: #fbd0d9;
     color: #5d091a;
 }
 
+/* Remove right border from the last list item */
 li:last-child {
     border-right: none;
-  }
-  
-/* Main Content */
-main {
-    flex-grow:1;
-    background-color: #fbd0d9;
-    margin-left: 200px;
-    padding: 20px;
-    height: 100vh;
-    overflow-y: auto;
 }
 
+/* Main content area styling: flex-grow allows the main area to expand */
+main {
+    flex-grow: 1;
+    background-color: #fbd0d9;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Heading (h1) styling: text color, font family, and size adjustments */
 h1 {
-    color:#5d091a;
+    color: #5d091a;
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal; 
     font-size: calc(4px + 1vw); 
-    text-align:center;
-    margin:auto;
+    text-align: center;
+    margin: auto;
     max-width: 600px;
 }
 
+/* Image styling: center image, keep aspect ratio, and limit size to 50% */
 img {
-    max-width: 50%;  /* Make the image take up 50% of the parent container */
-    height: auto;    /* Maintain aspect ratio */
+    max-width: 50%;
+    height: auto;
     display: block;
-    margin: 20px auto;  /* Center the image and add space around it */
+    margin: 20px auto;
 }
 
-
+/* Paragraph styling: text color, font size, and center alignment */
 p {
     color: #5d091a;
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal; 
-    font-size: calc(5px+1.5vw); 
-    margin:0 auto;
+    font-size: calc(4px + 1vw); 
+    margin: 0 auto;
     max-width: 600px;
 }
 
-/* Footer */
+/* Footer styling: background color and center-aligned text */
 footer {
     background-color: #f2738c;
     text-align: center;
     padding: 15px;
 }
 
+/* Calculator section styling: width, centering, padding, background, and border-radius */
 .calculator {
     max-width: 400px;
-    margin: 50px auto; /* Center the calculator */
+    margin: 50px auto;
     padding: 20px;
-    background-color: #fbd0d9; /* Light pink background */
+    background-color: #5d091a;
     border-radius: 10px;
     text-align: center;
     font-family: "Pacifico", cursive;
-    color: #5d091a; /* Dark red text color */
+    color: #fbd0d9; /* Text color */
 }
 
-/* Heading style for the calculator */
+/* Calculator heading (h1) styling: font size and color */
 .calculator h1 {
-    font-size: calc(5px+1.5vw);
-    color: #5d091a; /* Dark red */
+    font-size: calc(5px + 1.5vw);
+    color: #fbd0d9;
     margin-bottom: 20px;
 }
 
-/* Input box styling */
+/* Input box styling: full width, padding, font size, and border */
 .input-box {
     width: 100%;
     padding: 10px;
-    font-size: calc(5px+1.5vw);
+    font-size: calc(5px + 1.5vw);
     margin-bottom: 15px;
-    border: 1px solid #f2738c; /* Pink border */
+    border: 1px solid #f2738c;
     border-radius: 5px;
-    box-sizing: border-box;
-    background-color: #fff; /* White background */
-    color: #5d091a; /* Dark red text */
+    background-color: #fff;
+    color: #fbd0d9;
 }
 
-/* Styling for buttons */
+/* Styling for buttons within the calculator */
 .allButton {
     display: flex;
     flex-wrap: wrap;
@@ -210,13 +154,55 @@ footer {
     justify-content: center;
 }
 
+/* Individual button styling: size, background color, border, and cursor */
 .allButton button {
     width: 60px;
     padding: 10px;
     font-size: 18px;
-    background-color: #f2738c; /* Pink background */
-    color: white; /* White text */
+    background-color: #f2738c;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Media query: Adjust layout and styles for screens smaller than 750px */
+@media screen and (max-width: 750px) {
+    
+    /* Change main container layout to column on small screens */
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Adjust navbar to be horizontal on small screens */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    /* Unordered list items displayed in a row */
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+    }
+
+    /* List items take up equal space in the navbar */
+    li {
+        flex: 1;
+    }
+
+    /* Adjust padding in header and footer for small screens */
+    header, footer {
+        padding: 20px 10px;
+        text-align: center;
+    }
 }
