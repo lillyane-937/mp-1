@@ -18,7 +18,7 @@ This responsive website replicates my resume in a user-friendly, web-based forma
 ## 🛠️ Technologies Used
 
 - **Languages**: HTML, CSS, JavaScript
-- **Framework**: None – this project is built from the ground up using vanilla JavaScript and CSS for maximum control.
+- **Framework**: None – this project is built from the ground up using JavaScript and CSS for maximum control.
 - **Other**: JavaScript functions for interactive features
 
 ## 📂 Project Structure
